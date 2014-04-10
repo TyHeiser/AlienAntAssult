@@ -1,0 +1,26 @@
+       SKLabelNode * label =
+        [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
+        label.text = @"Alpha";
+        label.fontSize = 20.0;
+        label.position = CGPointMake(200, 300);
+        label.zPosition = 30;
+        [self addChild:label];
+        
+        [self addChild:_bgLayer];
+        self.backgroundColor = [SKColor blackColor];
+        [self playBackgroundMusic:@"GetMovingBeat.mp3"];
+        
+        
+        
+        
+        _bgLayer3       = [SKNode node];
+        _bgLayer2       = [SKNode node];
+        _bgLayer        = [SKNode node];
+        _playerLayer    = [SKNode node];
+        _HUDLayer       = [SKNode node];
+        
+        [self addChild:_bgLayer3];
+        [self addChild:_bgLayer2];
+        [self addChild:_bgLayer];
+        [self addChild:_playerLayer];
+        [self addChild:_HUDLayer];
